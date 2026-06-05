@@ -74,7 +74,12 @@ print("✅ Files saved locally.")
 
 #Upload Files to Hugging Face
 
-files = ["Xtrain.csv","Xtest.csv","ytrain.csv","ytest.csv"]
+files = [
+    "Capstone_project/data/Xtrain.csv",
+    "Capstone_project/data/Xtest.csv",
+    "Capstone_project/data/ytrain.csv",
+    "Capstone_project/data/ytest.csv"
+]
 
 for file_path in files:
     api.upload_file(
