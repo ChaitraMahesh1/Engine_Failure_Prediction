@@ -7,6 +7,7 @@ import os
 from sklearn.model_selection import train_test_split
 # for converting text data in to numerical representation
 from sklearn.preprocessing import LabelEncoder
+from imblearn.over_sampling import SMOTE
 # for hugging face space authentication to upload files
 from huggingface_hub import login, HfApi
 
