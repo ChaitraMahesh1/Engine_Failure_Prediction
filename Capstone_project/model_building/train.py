@@ -40,10 +40,10 @@ if HF_TOKEN:
 api = HfApi()
 
 # ---------------- Data Paths ----------------
-Xtrain_path = "hf://datasets/chaitram/Engine-Failure-Prediction/Xtrain.csv"
-Xtest_path = "hf://datasets/chaitram/Engine-Failure-Prediction/Xtest.csv"
-ytrain_path = "hf://datasets/chaitram/Engine-Failure-Prediction/ytrain.csv"
-ytest_path = "hf://datasets/chaitram/Engine-Failure-Prediction/ytest.csv"
+Xtrain_path = "hf://datasets/chaitram/Engine-Failure-Prediction/data/Xtrain.csv"
+Xtest_path  = "hf://datasets/chaitram/Engine-Failure-Prediction/data/Xtest.csv"
+ytrain_path = "hf://datasets/chaitram/Engine-Failure-Prediction/data/ytrain.csv"
+ytest_path  = "hf://datasets/chaitram/Engine-Failure-Prediction/data/ytest.csv"
 
 # ---------------- Load Data ----------------
 Xtrain = pd.read_csv(Xtrain_path)
