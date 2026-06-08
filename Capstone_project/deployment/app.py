@@ -9,7 +9,13 @@ import joblib
 st.set_page_config(page_title="Engine Failure Prediction", layout="centered")
 st.title("Engine Failure Prediction 🚀")
 
-MODEL_PATH = "best_engine_failure_model_v1.joblib"
+from huggingface_hub import hf_hub_download
+
+MODEL_PATH = hf_hub_download(
+    repo_id="chaitram/Engine-Failure-Prediction",
+    filename="best_engine_failure_model_v1.joblib",
+    repo_type="model"
+)
 
 # If your dataset is public, HF filesystem URL can work inside Spaces
 DATASET_PATH = "hf://datasets/chaitram/Engine-Failure-Prediction/engine_data.csv"
